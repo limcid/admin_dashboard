@@ -1,0 +1,116 @@
+* {
+    border: 1px dotted gray;
+}
+
+body {
+    margin: 0;
+    /* height: 100vh; */
+}
+
+.container {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    height: 100vh
+
+}
+
+.logo {
+    background-color: green;
+    /* grid-row: 1 / 2; */
+    margin: 20px;
+    margin-bottom: 30px ;
+}
+
+.sidebar {
+    background-color: #1992D4;
+    color: white;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.sidebar ul {
+    margin-bottom: 40px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.header {
+    background-color: white;
+    display: grid;
+    grid-column: 2/5;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* height: max-content */
+
+}
+
+.content {
+    /* border: 1px solid red; */
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr 1fr ;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;;
+}
+.content div {
+    box-shadow: 2px 2px 4px lightgray;
+}
+.content_sidebar {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+    grid-template-columns: 1fr;
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+}
+
+.content_heading {
+    grid-column: 1 / 3;
+    margin-left: 15px;
+    margin-bottom: 0px;
+        
+}
+
+.content_sidebar_announcements {
+    /* grid-column: 1 / 4; */
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.content_sidebar_trending {
+    /* grid-column: 1 / 4; */
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.project {
+    border-radius: 6px;
+    padding: 20px;
+    background-color: white;
+    margin: 15px;
+    border-left: 6px solid orange;
+}
+
+.announce {
+    border-radius: 6px;
+    padding: 20px;
+    background-color: white;
+    margin: 15px;
+    margin-bottom: 0px;
+
+}
+
+.trending {
+    border-radius: 6px;
+    padding: 20px;
+    background-color: white;
+    margin: 15px;
+
+}
